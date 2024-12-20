@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="./assests/logo.png">
+    <script src="./scripts/scripts.js" defer></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Floating Bar -->
+     <div class="Social-Media">
+        <a href="https://github.com/myuen1015"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mason-yuen-a70073311/"><i class="fa-brands fa-linkedin"></i></a>
+
+     </div>
+
+    <!-- Navigation Bar -->
+    <div>
+        <div class="navbar-placeholder"></div>
+        <nav class="navbar flex">
+            <i class="fa-solid fa-bars animation"></i>
+            <div class="nav-menu flex">
+                <i class="fa-solid fa-x animation"></i>
+                <a href="#Home" class="animation">Home</a>
+                <a href="#About" class="animation">About</a>
+                <a href="#Projects" class="animation">Projects</a>
+                <a href="#Experiences" class="animation">Experiences</a>
+            </div>
+            <a href="#contact" class="btn nav-btn animation mouse-cursor-gradient-tracking">
+                <span>Contact</span>
+              </a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero flex" id="home">
+        <img src="./assests/file.jpg" alt="web dev">
+        <h1><span class="text-effect">Mason Yuen, </span> <span class="text-normal">Computer Science</span></h1>
+        <a href="./assests/Mason Yuen Resume 11-22-2024.pdf" class="hero-resume animation" target="_blank" rel="noopener noreferrer">Resume</a>
+    </div>
+
+    <!-- About Section -->
+    <section class="container flex" id="About">
+        <div class="container-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-section flex">
+            <div class="about-left flex"></div>
+            <div class="about-right flex">
+                <p>
+                    <span class="text-normal">
+                        Motivated and detail-oriented Computer Science student at the College of Staten Island with knowledge in coding and a strong passion for software engineering and technology. Possesses a strong understanding of programming fundamentals and is committed to continuous learning within the field. Enthusiastic and adaptable about contributing to innovative software projects and collaborating with teams.
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="about-skills">
+            <h3>Skills</h3>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>TypeScript</li>
+                <li>C++</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+    <div class="completed-projects" id="Projects">
+        <h3>Completed Projects</h3>
+        <p>Here are a few projects I've worked on:</p>
+        <div class="image-placer">
+            <img src="./assests/image22.png" alt="Project Thumbnail" onclick="openLightbox(this)">
+            <div class="project-description">
+                <h4>Getting Professor information</h4>
+                <div class="project-words">
+                    <p>
+                    This project is a comprehensive tool that automates the extraction and summarization of faculty information from a university's website. It uses web scraping techniques to gather data such as contact details and notable achievements of professors. The extracted information is then processed and summarized using a generative AI model, providing concise summaries of the faculty's achievements. The data is organized into a structured format using pandas and saved as a CSV file for easy access and analysis. The project effectively combines web scraping, data processing, and AI to streamline the management of academic staff information.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+        <div class="image-placer">
+            <img src="./assests/Wordhuntimage.png" alt="Project Thumbnail 2" class="enlarge-image" onclick="openLightbox(this)">
+            <div class="project-description">
+                <h4>Word Hunt Solver</h4>
+                <div class="project-words">
+                    <p>                        
+This C++ program implements a word search puzzle solver for a 4x4 grid of letters, where the goal is to find valid words formed by adjacent letters, using a Trie data structure for efficient word lookup. The grid is explored using a depth-first search (DFS) approach, allowing movement in all 8 possible directions (vertically, horizontally, and diagonally). The program starts by loading a dictionary from a file (words_alpha.txt) and inserts words of length greater than three into a Trie. Each word is built by recursively exploring adjacent cells, and valid words are stored in a list if they exist in the Trie. After all possible words are found, they are sorted and printed. The program also ensures that each word is at least 4 letters long and checks for bounds and previously visited cells to avoid revisiting the same cell. The search process begins with reading a 4x4 grid of letters from the user, followed by initiating the word search on the grid. This combination of Trie-based lookup and DFS ensures efficient and thorough word searching in the grid, while backtracking prevents unnecessary re-exploration of already visited paths.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="image-placer">
+            <img src="./assests/Screenshot 2024-12-13 191350.png" alt="Project Thumbnail 3" onclick="openLightbox(this)">
+            <img src="./assests/image12312.png" alt="Project Thumbnail 3" onclick="openLightbox(this)">
+            <div class="project-description">
+                <h4>Infinite Platformer</h4>
+                <div class="project-words">
+                    <p>
+                        This code implements a simple infinite jumper game using the Pygame library. The game features a character (kitty) that jumps on platforms to ascend while the platforms scroll down as the character moves up. The character's movement is governed by gravity and jump physics, with horizontal control enabled using the A and D keys. Platforms are dynamically repositioned to simulate an infinite scrolling effect, resetting to the top of the screen once they move below the visible area. The game ends when the character falls off the bottom of the screen, displaying a "Game Over" message with an option to restart by pressing the space bar. The code uses collision detection to ensure the character can jump only when standing on a platform, and the display is updated each frame to render the character, platforms, and game state. The game loop manages the core logic, including user input, collision checks, movement updates, and rendering, while maintaining a consistent frame rate using Pygame's clock.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+
+            
+            <!-- Lightbox Container -->
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" alt="Lightbox Image">
+                <span class="close" onclick="closeLightbox()">×</span>
+            </div>
+            
+        </div>
+            
+        </div>
+        
+            
+        </div>
+
+        <!-- Contacts Section -->
+    <section class="container flex" id="contact">
+        <div class="container-title">
+            <h2>Contact</h2>
+        </div>
+        <div class="contact-section">
+            <div class="contact-left flex">
+                <h2 class="text-effect">Let's Talk</h2>
+                <p>Contact me.</p>
+             <div class="contact-details">
+                    <div class="contact-item flex">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Email: <a href="mailto:myuen1015@gmail.com">myuen1015@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item flex">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Phone: <a href="tel:+1234567890">1 (917) 981-1006</a></p>
+                    </div>
+                    <div class="contact-item flex">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                        <p>Location: Staten Island, NY</p>
+
+                    </div>
+                </div>
+            </div>
+            <form action="https://formsubmit.co/myuen1015@gmail.com" method="POST" class="contact-right flex">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>            
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="message">Enter a Message</label>
+                <textarea name="message" id="message" placeholder="Leave a message"  required></textarea>
+            
+                <button type="submit" class="btn animation">Submit</button>
+            </form>
+        </div>
+    </section>
+    </section>
+
+</body>
+</html>
